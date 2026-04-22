@@ -846,6 +846,7 @@ section.svc-features {
 .svc-swatches__row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--sp-4);
   margin-bottom: var(--sp-10);
 }
