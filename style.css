@@ -2328,6 +2328,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #1877F2;
 }
 
+.float-action--call {
+  background: #2E7D32;
+  transition-delay: 0.08s;
+}
+
 /* Backdrop to close on outside click */
 .float-backdrop {
   display: none;
