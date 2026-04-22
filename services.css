@@ -2007,13 +2007,16 @@ section.svc-features {
 }
 .colour-panel {
   border-radius: 10px;
-  aspect-ratio: 3/4;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--sp-4);
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 640px) {
+  .colour-panel { height: 280px; }
 }
 .colour-panel::after {
   content: '';
