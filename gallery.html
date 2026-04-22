@@ -33,7 +33,7 @@
     .gallery-item:hover img { transform: scale(1.03); }
     .gallery-item__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,18,16,0.7) 0%, transparent 50%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: var(--space-5); }
     .gallery-item:hover .gallery-item__overlay { opacity: 1; }
-    .gallery-item__label { color: #fff; font-size: var(--text-sm); font-weight: 500; }
+    .gallery-item__label { display: none; }
     .gallery-item__tag { display: inline-block; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; background: var(--color-accent); color: #fff; padding: 2px 8px; border-radius: 100px; margin-bottom: var(--space-2); }
     /* Lightbox */
     .lightbox { position: fixed; inset: 0; background: rgba(10,8,6,0.95); z-index: 1000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
