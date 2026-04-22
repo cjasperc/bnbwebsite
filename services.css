@@ -277,12 +277,12 @@ section.svc-features {
   }
 }
 
-.spec-item--mobile-only { display: block; }
-.spec-item--desktop-only { display: none; }
+.spec-grid .spec-item--mobile-only { display: flex; }
+.spec-grid .spec-item--desktop-only { display: none; }
 
 @media (min-width: 640px) {
-  .spec-item--mobile-only { display: none; }
-  .spec-item--desktop-only { display: block; }
+  .spec-grid .spec-item--mobile-only { display: none; }
+  .spec-grid .spec-item--desktop-only { display: flex; }
 }
 
 .spec-item {
