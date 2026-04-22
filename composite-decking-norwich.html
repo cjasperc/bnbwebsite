@@ -474,13 +474,6 @@
 
   <script src="script.js" defer></script>
   <script>
-    document.querySelectorAll('.svc-faq__trigger').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var item=btn.closest('.svc-faq__item'),answer=item.querySelector('.svc-faq__answer'),isOpen=item.classList.contains('svc-faq__item--open');
-        document.querySelectorAll('.svc-faq__item--open').forEach(function(el){el.classList.remove('svc-faq__item--open');el.querySelector('.svc-faq__answer').style.maxHeight='0';});
-        if(!isOpen){item.classList.add('svc-faq__item--open');answer.style.maxHeight=answer.scrollHeight+'px';}
-      });
-    });
     document.querySelectorAll('.svc-gallery__strip').forEach(function(strip){
       var isDown=false,startX,scrollLeft;
       strip.addEventListener('mousedown',function(e){isDown=true;strip.classList.add('is-dragging');startX=e.pageX-strip.offsetLeft;scrollLeft=strip.scrollLeft;});
