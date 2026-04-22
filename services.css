@@ -277,8 +277,12 @@ section.svc-features {
   }
 }
 
-.spec-grid--2col {
-  grid-template-columns: repeat(2, 1fr);
+.spec-item--mobile-only { display: block; }
+.spec-item--desktop-only { display: none; }
+
+@media (min-width: 640px) {
+  .spec-item--mobile-only { display: none; }
+  .spec-item--desktop-only { display: block; }
 }
 
 .spec-item {
