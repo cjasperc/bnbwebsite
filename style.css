@@ -1875,7 +1875,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: clamp(3.5rem, 8vw, 5rem);
   }
 
-  .hero__video-wrap { display: none; }
+  .hero__video-wrap,
+  .hero__video-wrap video { display: none !important; visibility: hidden; }
 
   .trex__grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -1959,7 +1960,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: clamp(3.5rem, 8vw, 5rem);
   }
 
-  .hero__video-wrap { display: none; }
+  .hero__video-wrap,
+  .hero__video-wrap video { display: none !important; visibility: hidden; }
 
   .hero__scroll { display: none; }
 }
