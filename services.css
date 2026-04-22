@@ -1991,3 +1991,53 @@ section.svc-features {
 
   .specs-strip__grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* --------------------------------------------
+   COLOUR PANELS
+   -------------------------------------------- */
+.colour-panels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  margin-top: var(--sp-6);
+}
+@media (min-width: 640px) {
+  .colour-panels--4 { grid-template-columns: repeat(4, 1fr); }
+  .colour-panels--1 { grid-template-columns: 1fr; max-width: 260px; }
+}
+.colour-panel {
+  border-radius: 10px;
+  aspect-ratio: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--sp-4);
+  position: relative;
+  overflow: hidden;
+}
+.colour-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 55%);
+  border-radius: inherit;
+}
+.colour-panel__name {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.colour-panel__desc {
+  display: block;
+  font-size: 11px;
+  color: rgba(255,255,255,0.82);
+  position: relative;
+  z-index: 1;
+  margin-top: 3px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  line-height: 1.35;
+}
