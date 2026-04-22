@@ -277,6 +277,10 @@ section.svc-features {
   }
 }
 
+.spec-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .spec-item {
   border-top: 2px solid var(--color-accent);
   padding-top: var(--sp-3);
