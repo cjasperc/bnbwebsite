@@ -176,7 +176,7 @@
 }
 
 .svc-overview__body + .svc-overview__body {
-  margin-top: calc(var(--sp-4) * -1);
+  margin-top: var(--sp-4);
 }
 
 /* Feature list within overview (ul variant) */
