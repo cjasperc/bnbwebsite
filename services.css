@@ -1927,6 +1927,8 @@ section.svc-features {
 }
 
 @media (max-width: 768px) {
+  #vs-paving { display: none; }
+
   .svc-overview__inner,
   .svc-overview__inner--reverse {
     grid-template-columns: 1fr;
